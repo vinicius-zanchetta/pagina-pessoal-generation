@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projeto Portfólio">
+    <meta name="author" content="Generation Brasil">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <link rel="icon" href="./assets/img/favicon.svg" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Universe</title>
+</head>
+
+<body>
+    <!-- Cabeçalho da Página (header) -->
+    <header class="flex menu_container">
+
+        <!-- Div Conteudo do Cabeçalho -->
+        <div id="header_content" class="menu_content">
+
+            <!-- Titulo do Cabeçalho -->
+            <div id="titulo">
+
+                <!-- Hyperlink -->
+                <a href="#">Universe</a>
+
+            </div>
+
+            <!-- Conteudo do Menu da Página (header) -->
+            <div id="menu" class="flex">
+
+                <!-- Menu da Página (nav) -->
+                <nav>
+                    <!-- Marcadores não ordenados -->
+                    <ul class="flex menu_lista">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#contact">Contate-me</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+
+    </header>
+
+    <!-- Seção Principal da Página (main) -->
+    <main>
+
+        <!-- Seção Home -->
+        <section id="home " class="home_container">
+
+            <!-- Texto da Seção Home -->
+            <article id="home_texto " class="home_content">
+
+                <h4>Bem-vindo ao Novo Universo</h4>
+                <h1>Mundos diferentes para pessoas diferentes</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quod error veniam in voluptatem magni quisquam
+                </p>
+
+                <a class="botao" target="_blank" href="https://github.com/conteudoGeneration"
+                    alt="Github da Generation Brasil">
+                    Explorar
+                </a>
+
+            </article>
+
+            <!-- Imagem da Seção Home -->
+            <article id="home_imagem" class="home_content">
+                <img src="./assets/img/astronauta.svg" alt="Capacete de Astronauta Animado">
+            </article>
+
+        </section>
+
+        <!-- Seção Sobre você -->
+        <section id="about" class="sobre_container">
+
+        </section>
+
+        <!-- Seção Formulário de Contato e Redes Sociais -->
+        <section id="contact"  class="contato_container">
+
+            <!-- Seção de Contato - Redes Sociais-->
+            <article id="redes_sociais" class="flex contanto_content">
+
+                <h4 >Contate-me</h4>
+                <p >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quod error veniam in voluptatem magni quisquam</p>
+                
+                <div id="icones_redes_sociais" class="flex social_container">
+                    <a href="">
+                        <img class="social_icon" src="assets/img/linkedin.svg" alt="LinkedIn" />
+                    </a>
+                    <a href="">
+                        <img class="social_icon" src="assets/img/github.svg" alt="Github" />
+                    </a>
+                    <a href="">
+                        <img class="social_icon" src="assets/img/instagram.svg" alt="Instagram" />
+                    </a>
+                </div>
+
+            </article>
+
+            <!-- Seção do Formulário-->
+            <form id="formulario" action="https://formsubmit.co/b77fbe28185327543b8b7c87cb69eac8 " method="POST">
+
+                <input type="hidden" name="_next" value="http://localhost:5500/sucess.html">
+                <input type="hidden" name="_captcha" value="false">
+
+                <label for="name">Nome: </label>
+                <input id="name" type="text" name="name" placeholder="Digite seu nome">
+                <span id="txtNome"></span>
+
+                <label for="email">E-mail: </label>
+                <input id="email" type="text" name="email" placeholder="Digite seu email">
+                <span id="txtEmail"></span>
+                
+
+                <label for="subject">Assunto: </label>
+                <input id="subject" type="text" name="subject" placeholder="Digite o título da message">
+                <span id="txtSubject"></span>
+
+                <label for="message">Mensagem: </label>
+                <textarea id="message" name="message" placeholder="Digite sua message"></textarea>
+
+                <button class="botao" type="submit">Enviar</button>
+                <!-- <a href="sucess.html">Enviar</a> -->
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+        Feito com 🧡 por Generation Brasil - 2024
+    </footer>
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
